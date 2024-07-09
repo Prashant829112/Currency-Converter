@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currencyConverter.css">
+</head>
+<body>
+    <div class="page">
+        <div class="converterBox">
+            <div id="header">
+                <h1>Currency Converter</h1>
+            </div>
+            <div id="form">
+                <form>
+                    <label for="amount">Enter amount</label>
+                    <br>
+                    <input id="amount" type="number" class="inputBox">
+                </form>
+            </div>
+            <div id="fromTo">
+                <div>
+                    <form>
+                        <label for="from">From</label>
+                        <br>
+                        <div class="country" id="fromDiv">
+                            <div id="fromImgDiv">
+                                <img id="fromImg" src="https://flagsapi.com/US/flat/64.png" height="30px" width="30px">             <!--it is not possible to input img in option, so a div is created in which img & currency of country is shown & border-decoration of submit is set to none-->
+                            </div>
+                            
+                            <select id="from" style="border: none;" class="counInOptn">
+                            
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div id="exc">
+                    <img src="arrows-exchange-horizontal-flat-white-color-icon-vector-5285880.jpg" id="img">
+                </div>
+                <div>
+                    <form>
+                        <label for="to">To</label>
+                        <br>
+                        <div class="country" id="toDiv">
+                            <div id="toImgDiv">
+                                <img id="toImg" src="https://flagsapi.com/IN/flat/64.png" height="30px" width="30px">
+                            </div>
+                            
+                            <select id="to" style="border: none;" class="counInOptn">
+                                
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="result">
+                <h2 style="padding-top:20px" id="printedResult">
+                    
+                </h2>
+            </div>
+            <div id="lastDiv">
+                <button id="btn">Get Exchange Rates</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="currencyConverter_countryList.js"></script>
+</body>
+</html>
